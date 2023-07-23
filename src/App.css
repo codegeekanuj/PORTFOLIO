@@ -1,38 +1,562 @@
-.App {
-  text-align: center;
+/* link rel"preconnect" href="https://fonts.googleapis.com"> */
+/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"> 
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  margin: 3.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 7rem;
+  margin-top: .6rem;
+  font-size: 30px;
+  color: #5f2428;
+}
+
+
+i {
+  margin: 0 .5rem;
+}
+
+a:hover {
+  color: black;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+#video1 {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+}
+
+.active {
+  text-decoration: underline;
+  color: black;
+}
+
+.hero1 {
+  /* background-image: url(./images/background.jpg); */
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.texts {
+  /* border: 2px solid black; */
+  height: 28rem;
+  width: 42rem;
+  color: #222;
+  margin-top: 8rem;
+  margin-left: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center; */
+  text-align: left;
+}
+
+.texts h1 {
+  font-size: 50px;
+}
+
+.texts span {
+  text-transform: uppercase;
+  color: #ff4a57;
+  font-size: 20px;
+}
+
+.texts p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  word-spacing: .4px;
+}
+
+.gif {
+  height: 26rem;
+  width: 35rem;
+  margin-top: 9rem;
+}
+
+.typed {
+  font-size: 50px;
+}
+
+.iconshero {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.iconshero i {
+  color: #ff4a57;
+  width: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  transition: .5s;
+}
+
+.iconshero i:hover {
+  border: 1px solid #ff4a57;
+  background-color: #ff4a57;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ----------contact css---------- */
+
+.hero2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* background-image: url(./images/giorgio-trovato-n4cjanwvGdg-unsplash.jpg); */
+  background-position: center;
+  background-size: cover;
+  /* padding-top: 6rem; */
 }
 
-@keyframes App-logo-spin {
+.firstrow {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 3.4rem;
+}
+
+.firstrow input {
+  margin-top: 1rem;
+}
+
+.rest {
+  display: flex;
+  flex-direction: column;
+  gap: -1.8rem;
+  margin-top: -.9rem;
+}
+
+.rest div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rest div p {
+  width: 100%;
+  text-align: left;
+}
+
+.inputvalues {
+  width: 100%;
+}
+
+input {
+  height: 1.8rem;
+  padding: 0 .4rem;
+  margin-top: -.6rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit {
+  height: 2rem;
+  background-color: rgba(19, 101, 225, 0.782);
+  color: white;
+  border-radius: 5px;
+  width: 8rem;
+  margin: 1rem auto;
+}
+
+form {
+  height: 64vh;
+  width: 30%;
+  padding: 2rem 2rem;
+  border: .1px solid black;
+  border-radius: 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: rgba(175, 92, 92, 0.733);
+  margin-top: 5rem;
+}
+
+#first {
+  margin-left: -.6rem;
+  /* border: 2px solid black; */
+}
+
+
+/* ---------------------about page---------------------- */
+
+
+.hero3 {
+  height: 175vh;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+.containerone {
+  height: 90vh;
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.myimage {
+  /* border: 2px solid black; */
+  margin-top: -90px;
+  height: 50vh;
+  width: 16vw;
+  padding-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-right: 200px;
+  border-radius: 650px;
+}
+
+.text1 {
+  /* border: 2px solid rgb(160, 154, 154); */
+  height: 40vh;
+  width: 40vw;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text1 span {
+  /* border: 2px solid black; */
+  font-size: 54px;
+  font-weight: 500;
+  margin-top: 4rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+}
+
+.text1 p {
+  font-weight: 500;
+  /* border: 3px solid rgb(187, 181, 181); */
+  width: 26rem;
+  font-size: 18px;
+  color: rgb(121, 116, 116);
+  font-family: 'Ubuntu', sans-serif;
+  word-spacing: 2px;
+}
+
+.containertwo {
+  /* border: 2px solid peru; */
+  height: 80vh;
+  /* position: absolute; */
+  top: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.para {
+  /* border: 2px solid blue; */
+  height: 60vh;
+  width: 50vw;
+
+}
+
+.para span {
+  font-size: 40px;
+  font-weight: 540;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+}
+
+.para p {
+  /* border: 2px solid black; */
+  width: 30rem;
+  color: rgb(121, 116, 116);
+  font-family: 'Ubuntu', sans-serif;
+  word-spacing: 3px;
+  font-size: 18px;
+}
+
+.skills ul {
+  list-style: disc;
+
+}
+
+.skills {
+  height: 60vh;
+  width: 40vw;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills li a {
+  color: #222;
+  text-decoration: none;
+  /* border: 2px solid pink; */
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* .box{
+  border: 1px solid rgb(216, 213, 213);
+} */
+
+.skills span {
+  font-size: 30px;
+  font-weight: 540;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+}
+
+.hero3 h3 {
+  font-size: 60px;
+  position: absolute;
+  top: 6rem;
+  left: 38rem;
+  font-weight: 540;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+}
+
+/* --------------------rolling ball---------------------- */
+
+.circle {
+  display: block;
+  position: absolute;
+  top: 550px;
+  width: 100px;
+  height: 100px;
+  background: rgb(112, 106, 106);
+  border-radius: 50%;
+
+  /* Animation to spin and move the sphere */
+  -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  -moz-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  -ms-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+
+  position: absolute;
+  left: 0;
+}
+
+/* Spinning the sphere using key frames */
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* Move sphere from left to right */
+@-moz-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@-ms-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* -----------------services page css---------------------- */
+
+.services {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 14rem;
+}
+
+.heading{
+  position: absolute;
+  top: 6rem;
+  left: 12.9rem;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;}
+
+.box1 {
+  height: 60vh;
+  width: 28vw;
+  margin-top: 230px;
+  background-color: #107ae1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.box2 {
+  height: 60vh;
+  width: 28vw;
+  margin-top: 230px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  background-color: #a891b7;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.videoeditor {
+  width: 18vw;
+  height: 20vh;
+}
+
+.webdeveloper {
+  width: 17vw;
+  height: 23vh;
+}
+
+.box1 span {
+  /* border: 2px solid black; */
+  font-size: 33px;
+  font-weight: 700;
+  color: white;
+}
+
+.box2 span {
+  /* border: 2px solid black; */
+  font-size: 33px;
+  font-weight: 700;
+  color: white;
+}
+
+.box1 p {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  word-spacing: 2px;
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 2.6rem;
+}
+
+.box2 p {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  word-spacing: 2px;
+  font-size: 17px;
+  font-weight: 500;
 }
