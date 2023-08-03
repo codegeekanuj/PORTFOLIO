@@ -10,10 +10,10 @@ const Navbar = () => {
       </div>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/About">About</NavLink>
-          <NavLink to="/Services">Service</NavLink>
-          <NavLink to="/Contact">Contact</NavLink>
+          <NavLink id="to" to="/">Home</NavLink>
+          <NavLink id="to1" to="/About">About</NavLink>
+          <NavLink id="to2" to="/Services">Service</NavLink>
+          <NavLink id="to3" to="/Contact">Contact</NavLink>
         </li>
       </ul>
       <div className="icons">

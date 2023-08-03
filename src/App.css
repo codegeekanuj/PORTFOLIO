@@ -23,7 +23,35 @@ ul {
   list-style: none;
 }
 
-a {
+#to{
+  text-decoration: none;
+  margin: 3.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#to{
+  text-decoration: none;
+  margin: 3.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#to1{
+  text-decoration: none;
+  margin: 3.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#to2{
+  text-decoration: none;
+  margin: 3.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#to3{
   text-decoration: none;
   margin: 3.5rem;
   font-size: 17px;
@@ -141,6 +169,8 @@ a:hover {
   font-size: 14px;
   transition: .5s;
 }
+
+
 
 .iconshero i:hover {
   border: 1px solid #ff4a57;
