@@ -22,7 +22,7 @@ const Contact = () => {
       <div class="rest">
         <div>
           <p>Email</p>
-          <input id="third" class="inputvalues" placeholder="email"/>
+          <input id="third" class="inputvalues" placeholder="Email"/>
         </div>
         <div>
           <p>Contact</p>
@@ -37,7 +37,7 @@ const Contact = () => {
           <p>Message</p>
           <input id="sixth" class="inputvalues" placeholder="Message"/>
         </div>
-        <input type="submit" id="submit" value="submit" />
+        <input type="submit" id="submit" value="Submit" />
       </div>
     </form>
     </div>
