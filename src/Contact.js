@@ -12,7 +12,7 @@ const Contact = () => {
       <div class="firstrow">
         <span
           >First Name <br />
-          <input id="first" placeholder="First Nmae"/>
+          <input id="first" placeholder="First Name"/>
         </span>
         <span
           >Last Name <br />
@@ -21,7 +21,7 @@ const Contact = () => {
       </div>
       <div class="rest">
         <div>
-          <p>email</p>
+          <p>Email</p>
           <input id="third" class="inputvalues" placeholder="email"/>
         </div>
         <div>
@@ -29,7 +29,7 @@ const Contact = () => {
           <input id="fourth" class="inputvalues" placeholder="Contact"/>
         </div>
         <div>
-          <p>password</p>
+          <p>Password</p>
 
           <input id="fifth" class="inputvalues" placeholder="Password"/>
         </div>
